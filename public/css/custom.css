@@ -1,0 +1,333 @@
+nav {
+    margin-bottom: 50px;
+}
+
+/*-----------------BOUTON DE CHANGEMENT DE COULEUR et MENU DE L'INTRANET------------*/
+#intranet_nd {
+    background-color: red;
+}
+#intranet_lp {
+    background: orange;
+}
+#intranet_lg {
+    background-color: dodgerblue;
+}
+#couleur_menu {
+    color: black;
+
+}
+/*-------------LOGIN--------------*/
+
+#connexion_button{
+    background-color: orange;
+}
+#connexion_img{
+    position: center;
+    height: auto;
+    padding-left: 110px;
+    margin: 5px;
+}
+
+
+#google {
+    text-align: center;
+}
+
+
+#google a {
+    color: black;
+}
+
+#google a:hover {
+    color: black;
+}
+
+#google img {
+    margin-top: 100px;
+    max-width:300px;
+    max-height:493px;
+    width: 100%;
+    height: auto;
+}
+
+#login-box {
+    margin-top: 130px;
+}
+
+/*-----------------LES DIV CONTENANT LES ACTU DU SITE PUBLIQUE-----------------------------------*/
+#div_nd{
+    z-index:3;
+    display: block;
+}
+#div_lp{
+    z-index:2;
+    display: none;
+}
+#div_lg{
+    z-index:1;
+    display:none;
+}
+
+/*-----------------ACTUALITE DU SITE PUBLIQUE POUR LE BOUTON NOTRE DAME-----------------------------------*/
+#prochainement_nd{
+    background-color: red;
+    color: white;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+#actu_table_nd {
+    border: 1px solid red;
+    float: left;
+    width: 300px;
+    height: 145px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+#actu_date_nd{
+    background-color: red;
+    color: white;
+}
+
+/*-----------------ACTUALITE DU SITE EXTERNE POUR LE BOUTON LYCEE PROFESSIONNEL-----------------------------------*/
+#prochainement_lp{
+    background-color: orange;
+    color: white;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+#actu_table_lp {
+    border: 1px solid orange;
+    float: left;
+    width: 300px;
+    height: 145px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+#actu_date_lp{
+    background-color: orange;
+    color: white;
+}
+
+/*-----------------ACTUALITE DU SITE EXTERNE POUR LE BOUTON LYCEE GENERAL-----------------------------------*/
+#prochainement_lg{
+    background-color: dodgerblue;
+    color: white;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+#actu_table_lg {
+    border: 1px solid dodgerblue;
+    float: left;
+    width: 300px;
+    height: 145px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+#actu_date_lg{
+    background-color: dodgerblue;
+    color: white;
+}
+
+
+/*-----------------------INFORMATIONS DEFILANTES-----------------------------------------*/
+#date_slide{
+    font-weight: bold;
+}
+
+#intra_slider{
+    width: 505px;
+    overflow:hidden;
+    margin: 50px auto;
+}
+#intra_slides{
+    width: calc(505px * 5);
+    animation: defilement 60s infinite;
+}
+#intra_slide{
+    float: left;
+    width: 500px;
+    height: 140px;
+    margin-left: 5px;
+}
+#intra_slides:hover {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+/*defilement des textes du slider*/
+@keyframes defilement {
+    0%{
+        transform: translateX(0); /*1er texte*/
+    }
+    10%{
+        transform: translateX(0); /*temps intermédiaire*/
+    }
+    20%{
+        transform: translateX(-510px); /*2e texte*/
+    }
+    30%{
+        transform: translateX(-510px); /*temps intermédiaire*/
+    }
+    40%{
+        transform: translateX(-1015px); /*3e texte*/
+    }
+    50%{
+        transform: translateX(-1015px); /*temps intermédiaire*/
+    }
+    60%{
+        transform: translateX(-1520px); /*4e texte*/
+    }
+    70%{
+        transform: translateX(-1520px); /*temps intermédiaire*/
+    }
+    80%{
+        transform: translateX(-2025px); /*5 texte*/
+    }
+    90%{
+        transform: translateX(-2025px); /*temps intermédiaire*/
+    }
+    100%{
+        transform: translateX(0); /*recommence au 1er texte*/
+    }
+}
+
+/*------------------------------ADMINISTRATION ----> PAGE AJOUT D'INFORMATION ET D'UTILISATION--------------*/
+#titre_information, #texte_information{
+    border:2px solid;
+    color:grey;
+}
+
+#texte_information{
+    height: 120px;
+}
+
+#choice_nd {
+     color: red;
+     font-weight: bold;
+ }
+
+#choice_lp {
+    color: orange;
+    font-weight: bold;
+}
+
+#choice_lg {
+    color: dodgerblue;
+    font-weight: bold;
+}
+#users,#informations{
+    margin: 10px;
+}
+
+.field-form {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border:2px solid;
+    color:grey;
+}
+
+
+#image_logo {
+    margin-left: 80px;
+    max-width:450px;
+    max-height:493px;
+    width: 100%;
+    height: auto;
+}
+
+
+#image_partenaire{
+    margin-top: 60px;
+}
+
+
+/*Footer*/
+
+#copyright {
+    margin-top: 12px;
+    float: right;
+    font-size: 12px;
+}
+
+.footer {
+
+    padding: 30px;
+    margin-top: 50px;
+    height: 190px;
+    background-color: white;
+}
+
+.footer-img {
+    height: 40px;
+    width: 40px;
+    margin: 12px;
+    border-radius: 3px;
+}
+
+#icons {
+    display: flex;
+}
+
+#links {
+    margin-top: 12px;
+}
+
+#links a {
+    color: black;
+
+}
+
+#links a:hover {
+    text-decoration: none;
+
+}
+
+/*About Page */
+
+.about-content {
+    padding: 20px;
+}
+
+.about-link {
+    color: darkred;
+    font-weight: bold;
+}
+
+.about-link:hover {
+    color: darkred;
+    text-decoration: none;
+}
+
+.about-list {
+    list-style-type: none;
+}
+
+.about-list p {
+    font-style: italic;
+}
+
+.about-title {
+    color: darkred;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+/*Author: Y. Merle
+  Author: A. Delavau (footer and about page)*/
